@@ -1,0 +1,5 @@
+Package: parrotshell
+Version: 0.1
+Maintainer: Peter Ferenc Hajdu <peter.ferenc.hajdu@gmail.com>
+Architecture: all
+Description: Parrot shell repeates every line without executing them.
