@@ -1,7 +1,7 @@
 OBJ = parrot.o
 
 parrot: $(OBJ)
-	$(CXX) $(OBJ) -o parrot
+	$(CC) $(OBJ) -o parrot
 
 FAKEROOT = build
 BIN = $(FAKEROOT)/usr/bin
