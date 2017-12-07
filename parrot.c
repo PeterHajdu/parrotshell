@@ -36,9 +36,9 @@ const char *getLogin() {
 }
 
 const char *getHost() {
-  static char hostname[BUFFER_SIZE];
-  if (gethostname(hostname, BUFFER_SIZE) < 0) {
-    strncpy(hostname, "szaguldokacsa", BUFFER_SIZE);
+  static char hostname[BUFFER_SIZE] = {0};
+  if (gethostname(hostname, BUFFER_SIZE - 1) < 0) {
+    strncpy(hostname, "szaguldokacsa", BUFFER_SIZE - 1);
   }
   return hostname;
 }
